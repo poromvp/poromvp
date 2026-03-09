@@ -181,7 +181,7 @@ header { display: none !important; }
 /* Projects Grid */
 .projects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
@@ -191,17 +191,31 @@ header { display: none !important; }
     border-radius: 10px;
     border: 2px solid #e9ecef;
     transition: all 0.3s;
+    text-decoration: none;
+    display: block;
+    color: inherit;
 }
 
 .project-card:hover {
     border-color: #667eea;
     transform: translateY(-5px);
     box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+    cursor: pointer;
 }
 
 .project-card h3 {
     color: #2c3e50;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-card .tech-stack {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #667eea;
+    font-weight: 600;
 }
 
 /* GitHub Stats */
@@ -220,14 +234,16 @@ header { display: none !important; }
 }
 
 .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     max-width: 900px;
     margin: 0 auto;
 }
 
 .stats-grid img {
+    max-width: 600px;
     width: 100%;
     border-radius: 10px;
 }
@@ -363,7 +379,7 @@ header { display: none !important; }
                 <div class="about-section">
                     <div class="about-item">
                         <strong>🔭 Currently Working On</strong>
-                        Developing a waste recognition app using YOLOv8, a school bus tracking app (BusTracker) with React Native, and a POS management system.
+                        Developing a waste recognition app using YOLOv8, an art selling website with React Native, and a POS management system.
                     </div>
                     <div class="about-item">
                         <strong>👯 Looking to Collaborate On</strong>
@@ -387,22 +403,30 @@ header { display: none !important; }
             <div class="card">
                 <h2>🚀 Featured Projects</h2>
                 <div class="projects">
-                    <div class="project-card">
-                        <h3>🗑️ Waste Recognition App</h3>
+                    <a href="https://github.com/poromvp/Waste-Identification" target="_blank" class="project-card">
+                        <h3>
+                            <span>🗑️ Waste Recognition App</span>
+                            <span>→</span>
+                        </h3>
                         <p>AI-powered waste classification application using YOLOv8 deep learning model for real-time solid waste detection.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>🚌 BusTracker</h3>
-                        <p>School bus tracking system with real-time map integration and push notifications built with React Native.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>🍽️ Snail Restaurant POS</h3>
-                        <p>Point-of-sale management software optimized for Bay Van Snail Restaurant with inventory tracking.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>📸 My Image Gallery</h3>
-                        <p>Android gallery application with smart multi-touch gestures and advanced image viewing capabilities.</p>
-                    </div>
+                        <div class="tech-stack">🐍 Python • PyTorch • YOLOv8</div>
+                    </a>
+                    <a href="https://github.com/poromvp/Web2" target="_blank" class="project-card">
+                        <h3>
+                            <span>🎨 Art Selling Website</span>
+                            <span>→</span>
+                        </h3>
+                        <p>E-commerce platform for buying and selling artwork with user authentication, shopping cart, and payment integration.</p>
+                        <div class="tech-stack">⚛️ React Native • JavaScript • Firebase</div>
+                    </a>
+                    <a href="https://github.com/poromvp/Java_SieuThiMini" target="_blank" class="project-card">
+                        <h3>
+                            <span>🏪 Mini Supermarket POS</span>
+                            <span>→</span>
+                        </h3>
+                        <p>Point-of-sale management system for retail stores with inventory tracking, sales reports, and customer management.</p>
+                        <div class="tech-stack">☕ Java • SQL Server</div>
+                    </a>
                 </div>
             </div>
         </main>
