@@ -1,21 +1,5 @@
-remote_theme: pages-themes/architect@v0.2.0 # Bạn có thể đổi sang 'minimal' hoặc 'cayman'
-title: "Quang Kiệt Lê (poromvp)"
-description: "AI & App Developer | YOLOv8 | React Native | Python"
-show_downloads: false
+remote_theme: pages-themes/minimal@v0.2.0
+title: Quang Kiệt Lê
+description: AI & App Developer
 google_analytics: 
-
-# Thông tin cá nhân
-avatar: "https://github.com/poromvp.png" # Tự động lấy avatar GitHub của bạn
-resume_link: "https://your-link-to-resume.com" # THAY LINK RESUME CỦA BẠN VÀO ĐÂY
-
-# Các dự án tiêu biểu
-projects:
-  - name: "Waste Recognition App"
-    description: "Ứng dụng nhận diện rác thải sử dụng YOLOv8."
-    link: "https://github.com/poromvp/Waste-Identification"
-  - name: "BusTracker"
-    description: "Trang web bán sách"
-    link: "https://github.com/truong0235/web-2"
-  - name: "Snail Restaurant POS"
-    description: "Hệ thống quản lý bán hàng siêu thị Mini."
-    link: "https://github.com/poromvp/Java_SieuThiMini"
+show_downloads: false
