@@ -2,57 +2,244 @@
 layout: default
 ---
 
-<header style="text-align: center; margin-bottom: 40px;">
-    <img src="https://github.com/poromvp.png" alt="Quang Kiệt Lê" style="width: 160px; border-radius: 50%; border: 1px solid #ddd; padding: 5px;">
+<style>
+    .portfolio-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+    }
     
-    <h1 style="margin-top: 15px;">Quang Kiệt Lê (poromvp)</h1>
+    .profile-header {
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 30px 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
     
-    <p style="font-size: 1.1em; color: #555;">
-        📍 TP. Hồ Chí Minh <br>
-        📧 <a href="mailto:quangkietle382@gmail.com">quangkietle382@gmail.com</a> | 📞 0977723621 <br>
-        <br>
-        <a href="./resume.pdf" target="_blank" style="font-weight: bold; color: #0366d6; text-decoration: underline;">
-            [ Link Resume (LaTeX PDF) ]
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        margin-bottom: 20px;
+    }
+    
+    .profile-header h1 {
+        margin: 15px 0 10px 0;
+        color: #2c3e50;
+        font-size: 2em;
+    }
+    
+    .contact-info {
+        font-size: 1.05em;
+        color: #555;
+        line-height: 1.8;
+        margin: 15px 0;
+    }
+    
+    .contact-info a {
+        color: #0366d6;
+        text-decoration: none;
+    }
+    
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+    
+    .resume-link {
+        display: inline-block;
+        margin: 20px 0;
+        padding: 12px 30px;
+        background-color: #0366d6;
+        color: white !important;
+        text-decoration: none !important;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    
+    .resume-link:hover {
+        background-color: #0256c7;
+    }
+    
+    .social-links {
+        margin-top: 20px;
+    }
+    
+    .social-links a {
+        margin: 0 12px;
+        padding: 8px 16px;
+        background-color: #fff;
+        color: #0366d6;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        transition: all 0.3s;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .social-links a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    
+    .section {
+        margin-bottom: 40px;
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    
+    .section h3 {
+        color: #2c3e50;
+        border-bottom: 3px solid #0366d6;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .section ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .section ul li {
+        padding: 8px 0;
+        line-height: 1.6;
+    }
+    
+    .section ul li strong {
+        color: #2c3e50;
+    }
+    
+    .project-item {
+        padding: 12px 0;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .project-item:last-child {
+        border-bottom: none;
+    }
+    
+    .stats-section {
+        text-align: center;
+        margin: 40px 0;
+        padding: 30px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 10px;
+    }
+    
+    .stats-section h3 {
+        color: white;
+        border-bottom: 3px solid white;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .stats-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+    
+    .footer {
+        text-align: center;
+        margin-top: 60px;
+        padding: 25px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        font-size: 0.95em;
+        color: #666;
+    }
+    
+    @media (max-width: 768px) {
+        .profile-header h1 {
+            font-size: 1.5em;
+        }
+        
+        .social-links a {
+            display: block;
+            margin: 10px auto;
+            max-width: 200px;
+        }
+        
+        .section {
+            padding: 15px;
+        }
+    }
+</style>
+
+<div class="portfolio-container">
+    <div class="profile-header">
+        <img src="https://github.com/poromvp.png" alt="Quang Kiệt Lê" class="profile-img">
+        
+        <h1>Quang Kiệt Lê (poromvp)</h1>
+        
+        <div class="contact-info">
+            📍 TP. Hồ Chí Minh<br>
+            📧 <a href="mailto:quangkietle382@gmail.com">quangkietle382@gmail.com</a> | 📞 0977723621
+        </div>
+        
+        <a href="./resume.pdf" target="_blank" class="resume-link">
+            📄 Xem Resume (LaTeX PDF)
         </a>
-    </p>
-
-    <div style="margin-top: 15px;">
-        <a href="https://facebook.com/lqk54733" style="margin: 0 10px;">Facebook</a>
-        <a href="https://linkedin.com/in/quang-kiệt-lê-2827133a5/" style="margin: 0 10px;">LinkedIn</a>
-        <a href="https://github.com/poromvp" style="margin: 0 10px;">GitHub</a>
+        
+        <div class="social-links">
+            <a href="https://facebook.com/lqk54733" target="_blank">Facebook</a>
+            <a href="https://linkedin.com/in/quang-kiệt-lê-2827133a5/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/poromvp" target="_blank">GitHub</a>
+        </div>
     </div>
-</header>
 
-<hr>
+    <div class="section">
+        <h3>💫 Giới thiệu</h3>
+        <ul>
+            <li><strong>Đang thực hiện:</strong> Phát triển ứng dụng nhận diện rác thải (YOLOv8), BusTracker (React Native) và hệ thống POS.</li>
+            <li><strong>Mong muốn hợp tác:</strong> Các dự án về Computer Vision (Keras, YOLOv8) hoặc phát triển Web/Mobile trong hệ sinh thái React.</li>
+            <li><strong>Đang học tập:</strong> Đào sâu kiến thức về Python, React, xử lý dữ liệu hình ảnh và quản trị dự án phần mềm.</li>
+            <li><strong>Kỹ năng đặc biệt:</strong> Đóng gói ứng dụng Python với PyInstaller và kiến trúc UI trong React.</li>
+        </ul>
+    </div>
 
-### 💫 Giới thiệu
-* **Đang thực hiện:** Phát triển ứng dụng nhận diện rác thải (YOLOv8), BusTracker (React Native) và hệ thống POS.
-* **Mong muốn hợp tác:** Các dự án về Computer Vision (Keras, YOLOv8) hoặc phát triển Web/Mobile trong hệ sinh thái React.
-* **Đang học tập:** Đào sâu kiến thức về Python, React, xử lý dữ liệu hình ảnh và quản trị dự án phần mềm.
-* **Kỹ năng đặc biệt:** Đóng gói ứng dụng Python với PyInstaller và kiến trúc UI trong React.
+    <div class="section">
+        <h3>💻 Kỹ năng chuyên môn</h3>
+        <ul>
+            <li><strong>Ngôn ngữ:</strong> Java, JavaScript, C++, PHP, Python, C, C#</li>
+            <li><strong>Frameworks/Tools:</strong> React Native, React Query, Keras, YOLOv8, PyTorch, .NET</li>
+            <li><strong>Cơ sở dữ liệu:</strong> Microsoft SQL Server, MariaDB, Firebase</li>
+        </ul>
+    </div>
 
----
+    <div class="section">
+        <h3>🚀 Dự án tiêu biểu</h3>
+        <div class="project-item">
+            <strong>1. Waste Recognition App</strong><br>
+            Ứng dụng nhận diện rác thải rắn sử dụng mô hình YOLOv8.
+        </div>
+        <div class="project-item">
+            <strong>2. BusTracker</strong><br>
+            Hệ thống theo dõi xe buýt trường học tích hợp bản đồ và thông báo thời gian thực.
+        </div>
+        <div class="project-item">
+            <strong>3. Snail Restaurant POS</strong><br>
+            Phần mềm quản lý bán hàng tối ưu cho quán ốc Bảy Vân.
+        </div>
+        <div class="project-item">
+            <strong>4. My Image Gallery</strong><br>
+            Ứng dụng Android quản lý ảnh với các tính năng chạm đa điểm thông minh.
+        </div>
+    </div>
 
-### 💻 Kỹ năng chuyên môn
-* **Ngôn ngữ:** Java, JavaScript, C++, PHP, Python, C, C#.
-* **Frameworks/Tools:** React Native, React Query, Keras, YOLOv8, PyTorch, .NET.
-* **Cơ sở dữ liệu:** Microsoft SQL Server, MariaDB, Firebase.
+    <div class="stats-section">
+        <h3>📊 Thống kê GitHub</h3>
+        <img src="https://github-readme-stats.vercel.app/api?username=poromvp&theme=tokyonight&show_icons=true" alt="GitHub Stats">
+    </div>
 
----
-
-### 🚀 Dự án tiêu biểu
-1.  **Waste Recognition App**: Ứng dụng nhận diện rác thải rắn sử dụng mô hình YOLOv8.
-2.  **BusTracker**: Hệ thống theo dõi xe buýt trường học tích hợp bản đồ và thông báo thời gian thực.
-3.  **Snail Restaurant POS**: Phần mềm quản lý bán hàng tối ưu cho quán ốc Bảy Vân.
-4.  **My Image Gallery**: Ứng dụng Android quản lý ảnh với các tính năng chạm đa điểm thông minh.
-
----
-
-### 📊 Thống kê GitHub
-<p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=poromvp&theme=flat&show_icons=true" alt="GitHub Stats">
-</p>
-
-<footer style="text-align: center; margin-top: 50px; font-size: 0.8em; color: #888;">
-    ⚡ Fun fact: I'm a massive Bakugan fan and a badminton enthusiast! 🏸
-</footer>
+    <div class="footer">
+        ⚡ <strong>Fun fact:</strong> I'm a massive Bakugan fan and a badminton enthusiast! 🏸
+    </div>
+</div>
