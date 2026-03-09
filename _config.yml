@@ -1,3 +1,21 @@
-remote_theme: pages-themes/minimal@v0.2.0
-title: Lê Quang Kiệt
-description: Chào mừng đến với Portfolio của tôi từ GitHub!
+remote_theme: pages-themes/architect@v0.2.0 # Bạn có thể đổi sang 'minimal' hoặc 'cayman'
+title: "Quang Kiệt Lê (poromvp)"
+description: "AI & App Developer | YOLOv8 | React Native | Python"
+show_downloads: false
+google_analytics: 
+
+# Thông tin cá nhân
+avatar: "https://github.com/poromvp.png" # Tự động lấy avatar GitHub của bạn
+resume_link: "https://your-link-to-resume.com" # THAY LINK RESUME CỦA BẠN VÀO ĐÂY
+
+# Các dự án tiêu biểu
+projects:
+  - name: "Waste Recognition App"
+    description: "Ứng dụng nhận diện rác thải sử dụng YOLOv8."
+    link: "https://github.com/poromvp/waste-recognition"
+  - name: "BusTracker"
+    description: "Hệ thống theo dõi xe buýt trường học bằng React Native."
+    link: "https://github.com/poromvp/BusTracker"
+  - name: "Snail Restaurant POS"
+    description: "Hệ thống quản lý bán hàng cho quán ốc Bảy Vân."
+    link: "https://github.com/poromvp/pos-system"
