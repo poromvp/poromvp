@@ -11,5 +11,5 @@
 
 <img src="https://ghstats.dev/api/card?username=poromvp&theme=forest" alt="GitHub Stats Card" />
 
-### Top 
+### Top contributes
 <img src="https://ghstats.dev/api/sparkline?username=poromvp&theme=radical&days=32&width=320&height=80" alt="Contribution Sparkline" />
