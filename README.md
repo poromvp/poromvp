@@ -9,9 +9,7 @@
 
 # GitHub Stats & Streak:
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=poromvp&theme=default_repocard&hide_border=false&include_all_commits=true&count_private=true) ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=poromvp&theme=default&hide_border=false)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=poromvp&theme=default_repocard&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<img src="https://ghstats.dev/api/card?username=poromvp&theme=forest" alt="GitHub Stats Card" />
 
 ### Top Contributed Repo
 ![Top Contributed Repo](https://github-contributor-stats.vercel.app/api?username=poromvp&limit=5&theme=dark&combine_all_yearly_contributions=true)
