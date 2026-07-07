@@ -11,10 +11,5 @@
 
 <img src="https://ghstats.dev/api/card?username=poromvp&theme=forest" alt="GitHub Stats Card" />
 
-### Top Contributed Repo
-![Top Contributed Repo](https://github-contributor-stats.vercel.app/api?username=poromvp&limit=5&theme=dark&combine_all_yearly_contributions=true)
-
----
-[![Profile Views](https://visitcount.itsvg.in/api?id=poromvp&icon=0&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+### Top 
+<img src="https://ghstats.dev/api/sparkline?username=poromvp&theme=radical&days=32&width=320&height=80" alt="Contribution Sparkline" />
